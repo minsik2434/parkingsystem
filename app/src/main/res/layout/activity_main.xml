@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <!--    아이콘, 제목  레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="90dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/parking"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="주차 관리 시스템"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <!-- 로그인 창 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/left_image"
+                android:drawablePadding="20dp"
+                android:background="@drawable/id_box"
+                android:hint="아이디 입력"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/left_image2"
+                android:drawablePadding="20dp"
+                android:background="@drawable/id_box"
+                android:hint="비밀번호 입력"
+                android:inputType="textPassword"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="로그인"
+                android:background="@drawable/login_button"/>
+        </LinearLayout>
+        <!-- 회원가입,아이디 찾기, 비밀번호 찾기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:layout_margin="5dp"
+                android:background="#00ff0000"
+                android:textColor="#000000"
+                android:id="@+id/SignUp_btn"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
+                android:layout_margin="5dp"
+                android:background="#00ff0000"
+                android:textColor="#000000"
+                android:id="@+id/Sid_btn"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기"
+                android:layout_margin="5dp"
+                android:background="#00ff0000"
+                android:textColor="#000000"
+                android:id="@+id/Spw_btn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="20dp"
+                android:background="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개발자:최민식"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
